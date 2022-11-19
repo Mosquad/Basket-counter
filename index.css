@@ -1,0 +1,100 @@
+/* === Fonts & Color === */
+
+@font-face {
+  font-family: "Cursed Timer ULiL", sans-serif;
+  src: url(images/webfonts/CursedTimerULil.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+:root {
+  --background: rgba(27, 36, 74, 1);
+  --primary: rgba(154, 171, 216, 1);
+  --heading: rgba(238, 238, 238, 1);
+  --text: rgba(249, 79, 109, 1);
+  --scoreboard: rgba(8, 0, 1, 1);
+}
+
+body {
+    margin: 0;
+    background-color: #1B244A;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 28px;
+    align-items: center;
+}
+
+.name {
+    width: 300px;
+    height: 36px;
+    left: 85px;
+    top: 68px;
+    text-align: center;
+
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 36px;
+    color: var(--heading);    
+}
+.scoreboard {
+    font-family: "Cursed Timer ULiL";
+    background: var(--scoreboard);
+    width: 170px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 90px;
+    line-height: 120px;
+    margin: 40px auto;
+    color: var(--text);
+ }
+ 
+ .buttons {
+    text-align: center;
+    display: flex;
+    gap: 0.4em;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+ }
+ 
+ .points-btn {
+    font-family: "Cursed Timer ULiL";
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    margin: 0 4px; /*adds the horizontal space between the buttons*/
+    font-size: 18px;
+    font-weight: 400;
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+    color: var(--primary);
+ }
+
+ .clr-btn {
+    display: block;
+    color: var(--primary);
+    font-family: "Cursed Timer ULiL";
+    font-size: 25px;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid var(--text);
+    padding: 9px 19px;
+    margin: 50px auto 20px auto;
+  }
+
+
+ .buttons > button:active {
+  transform: scale(0.96);
+}
+
+.clr-btn > .clr-btn:active {
+  transform: scale(0.96);
+}
