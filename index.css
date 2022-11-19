@@ -101,6 +101,7 @@ body {
 
 .image{
   display: block;
+  background-color: transparent;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
