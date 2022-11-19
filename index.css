@@ -98,3 +98,13 @@ body {
 .clr-btn > .clr-btn:active {
   transform: scale(0.96);
 }
+
+.image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  width: 155px;
+  height: 155px;
+
+}

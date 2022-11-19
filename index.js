@@ -4,7 +4,6 @@ let countELGuest = document.getElementById("scoreguest")
 let countelReset = document.getElementById("clear")
 let countG = 0
 
-
 //* Home teller *//
 
 function increment_home1() {
